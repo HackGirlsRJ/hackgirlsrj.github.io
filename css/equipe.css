@@ -1,0 +1,21 @@
+.container {
+    background-color: #351C75;
+    margin: none;
+    height: 100px;
+}
+
+.container h1 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 55px;
+    position: relative;
+}
+
+.container img {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    float: left;
+}

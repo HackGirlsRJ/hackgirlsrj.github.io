@@ -1,0 +1,7 @@
+body {
+    background-color: #351C75;
+    background-image: url(../img/inicial.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
