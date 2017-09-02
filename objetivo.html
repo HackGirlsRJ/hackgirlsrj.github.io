@@ -16,6 +16,7 @@
         <link href="css/animate.css" rel="stylesheet" type="text/css"/>
         <link href="vendor/themify/themify.css" rel="stylesheet" type="text/css"/>
         <link href="vendor/scrollbar/scrollbar.min.css" rel="stylesheet" type="text/css"/>
+        <link href="vendor/swiper/swiper.min.css" rel="stylesheet" type="text/css"/>
 
         <!-- Theme Styles -->
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
@@ -29,12 +30,23 @@
 
     <!-- Body -->
     <body>
+
         <!--========== HEADER ==========-->
         <header class="navbar-fixed-top s-header js__header-sticky js__header-overlay">
             <!-- Navbar -->
             <div class="s-header__navbar">
                 <div class="s-header__container">
                     <div class="s-header__navbar-row">
+                        <div class="s-header__navbar-row-col">
+                            <!-- Logo -->
+                            <div class="s-header__logo">
+                                <a href="index.html" class="s-header__logo-link">
+                                    <img class="s-header__logo-img s-header__logo-img-default" src="img/logo-normal.png" alt="HackGirls Logo">
+                                    <img class="s-header__logo-img s-header__logo-img-shrink" src="img/logo-normal.png" alt="HackGirls Logo">
+                                </a>
+                            </div>
+                            <!-- End Logo -->
+                        </div>
                         <div class="s-header__navbar-row-col">
                             <!-- Trigger -->
                             <a href="javascript:void(0);" class="s-header__trigger js__trigger">
@@ -57,8 +69,8 @@
                     <div class="container-fluid">
                         <!-- Menu List -->                                
                         <ul class="list-unstyled s-header__nav-menu">
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider -is-active" href="index.html">Página inicial</a></li>
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="objetivo.html">Objetivo</a></li>
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="index.html">Página inicial</a></li>
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider -is-active" href="objetivo.html">Objetivo</a></li>
                             <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="team.html">Equipe</a></li>
                             <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="eventos.html">Eventos</a></li>
                             <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="contacts.html">Contato</a></li>
@@ -94,9 +106,49 @@
             <!-- End Overlay -->
         </header>
         <!--========== END HEADER ==========-->
-        
-        <div class="g-fullheight--xs g-bg-position--center swiper-slide" style="background: url('img/1920x1080/04.jpg');">
+
+        <!--========== SWIPER SLIDER ==========-->
+        <div class="s-swiper js__swiper-one-item">
+            <!-- Swiper Wrapper -->
+            <div class="swiper-wrapper">
+                <div class="g-fullheight--xs g-bg-position--center swiper-slide" style="background: url('img/1920x1080/03.jpg');">
+                    <div class="container g-text-center--xs g-ver-center--xs">
+                        <div class="g-margin-b-30--xs">
+                            <h1 class="g-font-size-35--xs g-font-size-45--sm g-font-size-55--md g-color--white">Lorem ipsum dolor<br>sit amet, consectetur</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="g-fullheight--xs g-bg-position--center swiper-slide" style="background: url('img/1920x1080/02.jpg');">
+                    <div class="container g-text-center--xs g-ver-center--xs">
+                        <div class="g-margin-b-30--xs">
+                            <div class="g-margin-b-30--xs">
+                                <h2 class="g-font-size-35--xs g-font-size-45--sm g-font-size-55--md g-color--white">Nam eu viverra purus<br>Maecenas odio justo<br>eleifend ut sapien</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="g-fullheight--xs g-bg-position--center swiper-slide" style="background: url('img/1920x1080/01.jpg');">
+                    <div class="container g-text-center--xs g-ver-center--xs">
+                        <div class="g-margin-b-30--xs">
+                            <div class="g-margin-b-30--xs">
+                                <h2 class="g-font-size-35--xs g-font-size-45--sm g-font-size-55--md g-color--white">Nulla suscipit, mauris<br>eget pellentesque<br>laoreet, dolor</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Swiper Wrapper -->
+
+            <!-- Arrows -->
+            <a href="javascript:void(0);" class="s-swiper__arrow-v1--right s-icon s-icon--md s-icon--white-brd g-radius--circle ti-angle-right js__swiper-btn--next"></a>
+            <a href="javascript:void(0);" class="s-swiper__arrow-v1--left s-icon s-icon--md s-icon--white-brd g-radius--circle ti-angle-left js__swiper-btn--prev"></a>
+            <!-- End Arrows -->
         </div>
+        <!--========== END SWIPER SLIDER ==========-->
+
+
+        <!-- Back To Top -->
+        <a href="javascript:void(0);" class="s-back-to-top js__back-to-top"></a>
 
         <!--========== JAVASCRIPTS (Load javascripts at bottom, this will reduce page load time) ==========-->
         <!-- Vendor -->
@@ -111,7 +163,6 @@
         <script type="text/javascript" src="vendor/counterup.min.js"></script>
         <script type="text/javascript" src="vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
         <script type="text/javascript" src="vendor/jquery.parallax.min.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsXUGTFS09pLVdsYEE9YrO2y4IAncAO2U"></script>
         <script type="text/javascript" src="vendor/jquery.wow.min.js"></script>
 
         <!-- General Components and Settings -->
@@ -120,9 +171,6 @@
         <script type="text/javascript" src="js/components/scrollbar.min.js"></script>
         <script type="text/javascript" src="js/components/swiper.min.js"></script>
         <script type="text/javascript" src="js/components/counter.min.js"></script>
-        <script type="text/javascript" src="js/components/portfolio-3-col.min.js"></script>
-        <script type="text/javascript" src="js/components/parallax.min.js"></script>
-        <script type="text/javascript" src="js/components/google-map.min.js"></script>
         <script type="text/javascript" src="js/components/wow.min.js"></script>
         <!--========== END JAVASCRIPTS ==========-->
 
