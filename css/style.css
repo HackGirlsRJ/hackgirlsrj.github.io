@@ -1,6 +1,3 @@
-/*----------------------------------
-	Common HTML elements and more for easier usage
-------------------------------------*/
 html {
   overflow-x: hidden;
 }
@@ -1131,7 +1128,6 @@ fieldset[disabled] .s-btn {
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-  border-radius: 50%;
 }
 
 .s-header__logo-img-default {
