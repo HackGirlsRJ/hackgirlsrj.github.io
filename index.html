@@ -31,93 +31,64 @@
     <!-- Body -->
     <body>
         <!--========== HEADER ==========-->
-        <header class="navbar-fixed-top s-header js__header-sticky js__header-overlay">
+        <header class="navbar-fixed-top s-header-v2 js__header-sticky">
             <!-- Navbar -->
-            <div class="s-header__navbar">
-                <div class="s-header__container">
-                    <div class="s-header__navbar-row">
-                        <div class="s-header__navbar-row-col">
+            <nav class="s-header-v2__navbar">
+                <div class="container g-display-table--lg">
+                    <!-- Navbar Row -->
+                    <div class="s-header-v2__navbar-row">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="s-header-v2__navbar-col">
+                            <button type="button" class="collapsed s-header-v2__toggle" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
+                                <span class="s-header-v2__toggle-icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="s-header-v2__navbar-col s-header-v2__navbar-col-width--180">
                             <!-- Logo -->
-                            <div class="s-header__logo">
-                                <a href="#index" class="s-header__logo-link">
-                                    <img class="s-header__logo-img s-header__logo-img-default g-radius--50" src="img/logo-normal.png" alt="HackGirls Logo">
-                                    <img class="s-header__logo-img s-header__logo-img-shrink g-radius--50" src="img/logo-normal.png" alt="HackGirls Logo">
+                            <div class="s-header-v2__logo">
+                                <a href="index.html" class="s-header-v2__logo-link">
+                                    <img class="s-header-v2__logo-img s-header-v2__logo-img--default" src="img/logo.png" alt="HackGirls Logo">
+                                    <img class="s-header-v2__logo-img s-header-v2__logo-img--shrink" src="img/logo-white.png" alt="HackGirls Logo">
                                 </a>
                             </div>
                             <!-- End Logo -->
                         </div>
-                        <div class="s-header__navbar-row-col">
-                            <!-- Trigger -->
-                            <a href="javascript:void(0);" class="s-header__trigger js__trigger">
-                                <span class="s-header__trigger-icon"></span>
-                                <svg x="0rem" y="0rem" width="3.125rem" height="3.125rem" viewbox="0 0 54 54">
-                                    <circle fill="transparent" stroke="#fff" stroke-width="1" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
-                                </svg>
-                            </a>
-                            <!-- End Trigger -->
+                        
+                        <div class="s-header-v2__navbar-col s-header-v2__navbar-col--right">
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse s-header-v2__navbar-collapse" id="nav-collapse">
+                                <ul class="s-header-v2__nav g-text-center--xs">
+                                    <li class="s-header-v2__nav-item"><a href="index.html" class="s-header-v2__nav-link">Página Inicial</a></li>
+                                    <li class="s-header-v2__nav-item"><a href="#objetivo" class="s-header-v2__nav-link">Objetivo</a></li>
+                                    <li class="s-header-v2__nav-item"><a href="#equipe" class="s-header-v2__nav-link">Equipe</a></li>
+                                    <li class="s-header-v2__nav-item"><a href="#eventos" class="s-header-v2__nav-link">Eventos</a></li>
+                                    <li class="s-header-v2__nav-item"><a href="#contato" class="s-header-v2__nav-link">Contato</a></li>
+                                </ul>
+                            </div>
+                            <!-- End Nav Menu -->
                         </div>
                     </div>
+                    <!-- End Navbar Row -->
                 </div>
-            </div>
+            </nav>
             <!-- End Navbar -->
-
-            <!-- Overlay -->
-            <div class="s-header-bg-overlay js__bg-overlay">
-                <!-- Nav -->
-                <nav class="s-header__nav js__scrollbar">
-                    <div class="container-fluid">
-                        <!-- Menu List -->                                
-                        <ul class="list-unstyled s-header__nav-menu">
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="#index">Página inicial</a></li>
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="#objetivo">Objetivo</a></li>
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="#equipe">Equipe</a></li>
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="#eventos">Eventos</a></li>
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="#contato">Contato</a></li>
-                        </ul>
-                        <!-- End Menu List -->
-                    </div>
-                </nav>
-                <!-- End Nav -->
-
-                <!-- Action -->
-                <ul class="list-inline s-header__action s-header__action--rb">
-                    <li class="s-header__action-item">
-                        <a class="s-header__action-link" href="https://www.facebook.com/HackGirlsRJ/">
-                            <i class="g-padding-r-5--xs ti-facebook"></i>
-                            <span class="g-display-none--xs g-display-inline-block--sm">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="s-header__action-item">
-                        <a class="s-header__action-link" href="https://twitter.com/hackgirlsrj">
-                            <i class="g-padding-r-5--xs ti-twitter"></i>
-                            <span class="g-display-none--xs g-display-inline-block--sm">Twitter</span>
-                        </a>
-                    </li>
-                    <li class="s-header__action-item">
-                        <a class="s-header__action-link" href="https://www.instagram.com/hackgirlss/">
-                            <i class="g-padding-r-5--xs ti-instagram"></i>
-                            <span class="g-display-none--xs g-display-inline-block--sm">Instagram</span>
-                        </a>
-                    </li>
-                </ul>
-                <!-- End Action -->
-            </div>
-            <!-- End Overlay -->
         </header>
         <!--========== END HEADER ==========-->
         
-        <div class="g-fullheight--xs g-bg-position--center swiper-slide" style="background: url('img/1920x1080/04.jpg');" id="index">
+        <div class="g-fullheight--xs g-bg-position--center swiper-slide" style="background: url('img/1920x1080/04.jpg');">
         </div>
         
         <!--========== PAGE CONTENT ==========-->
+        
         <!--========== SWIPER SLIDER ==========-->
         <div class="s-swiper js__swiper-one-item" id="objetivo">
             <!-- Swiper Wrapper -->
             <div class="swiper-wrapper">
-                <div class="g-fullheight--xs g-bg-position--center swiper-slide" style="background: url('img/1920x1080/03.jpg');">
+                <div class="g-fullheight--xs g-bg-position--center swiper-slide" style="background: url('img/1920x1080/01.jpg');">
                     <div class="container g-text-center--xs g-ver-center--xs">
                         <div class="g-margin-b-30--xs">
-                            <h1 class="g-font-size-35--xs g-font-size-45--sm g-font-size-55--md g-color--white">Lorem ipsum dolor<br>sit amet, consectetur</h1>
+                            <h1 class="g-font-size-35--xs g-font-size-45--sm g-font-size-55--md g-color--white">6 meninas do terceiro ano<br>do ensino médio cursando <br>Programação de Jogos Digitais</h1>
                         </div>
                     </div>
                 </div>
@@ -125,16 +96,16 @@
                     <div class="container g-text-center--xs g-ver-center--xs">
                         <div class="g-margin-b-30--xs">
                             <div class="g-margin-b-30--xs">
-                                <h2 class="g-font-size-35--xs g-font-size-45--sm g-font-size-55--md g-color--white">Nam eu viverra purus<br>Maecenas odio justo<br>eleifend ut sapien</h2>
+                                <h1 class="g-font-size-35--xs g-font-size-45--sm g-font-size-55--md g-color--white">Queremos incentivar<br>meninas a entrarem<br>no mundo da tecnologia</h1>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="g-fullheight--xs g-bg-position--center swiper-slide" style="background: url('img/1920x1080/01.jpg');">
+                <div class="g-fullheight--xs g-bg-position--center swiper-slide" style="background: url('img/1920x1080/03.jpg');">
                     <div class="container g-text-center--xs g-ver-center--xs">
                         <div class="g-margin-b-30--xs">
                             <div class="g-margin-b-30--xs">
-                                <h2 class="g-font-size-35--xs g-font-size-45--sm g-font-size-55--md g-color--white">Nulla suscipit, mauris<br>eget pellentesque<br>laoreet, dolor</h2>
+                                <h1 class="g-font-size-35--xs g-font-size-45--sm g-font-size-55--md g-color--white">Através de palestras,<br>workshops e festivais</h1>
                             </div>
                         </div>
                     </div>
@@ -149,9 +120,20 @@
         </div>
         <!--========== END SWIPER SLIDER ==========-->
         
+        <!--========== CODEGIRL ==========-->
+        <div class="g-position--relative g-bg-color--primary">
+            <div class="g-container--md g-padding-y-25--xs">
+                <div class="g-text-center--xs g-margin-t-50--xs g-margin-b-80--xs">
+                    <p class="g-font-size-14--xss g-color--white-opacity g-letter-spacing--2 g-margin-b-25--xs">“Acho que ser uma programadora é às vezes se sentir muito só. É muito difícil querer ser o que você não pode ver. Porque onde quer que olhe, não se vê muitas garotas. Você não pode ficar animada na frente de outras pessoas porque elas não se interessam, então ver um concurso que realmente estimula mulheres a empreenderem em tecnologia foi muito inspirador pra mim.”</p>
+                    <p class="g-font-size-14--xss g-color--white-opacity g-letter-spacing--2 g-margin-b-25--xs s-italic">- CodeGirl (documentário do Technovation)</p>
+                </div>
+            </div>
+        </div>
+        <!--========== END CODEGIRL ==========-->
+        
         <!--========== PROMO BLOCK ==========-->
         <div class="g-bg-color--sky-light js__parallax-window" id="equipe">
-            <div class="g-container--md g-text-center--xs g-padding-y-80--xs">
+            <div class="g-container--md g-text-center--xs g-padding-t-100--xs">
                 <h1 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--primary g-letter-spacing--1">Equipe</h1>
             </div>
         </div>
@@ -217,7 +199,7 @@
                             <div class="g-bg-color--white g-box-shadow__dark-lightest-v2 g-text-center--xs g-padding-x-40--xs g-padding-y-40--xs">
                                 <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2">17 anos</p>
                                 <h3 class="g-font-size-22--xs g-letter-spacing--1"><a href="http://julianapotengy.github.io/">Juliana Potengy</a></h3>
-                                <p>Lorem ipsum</p>
+                                <p>Game design, programação e web design</p>
                             </div>
                         </article>
                         <!-- End Girl -->
@@ -241,7 +223,7 @@
         
         <!--========== PROMO BLOCK ==========-->
         <div class="g-bg-color--sky-light js__parallax-window" id="eventos">
-            <div class="g-container--md g-text-center--xs g-padding-y-80--xs">
+            <div class="g-container--md g-text-center--xs g-padding-t-100--xs">
                 <h1 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--primary g-letter-spacing--1">Eventos</h1>
             </div>
         </div>
@@ -254,7 +236,7 @@
                     <div class="col-sm-5 col-sm-push-7">
                         <div class="g-margin-b-30--xs">
                             <h3 class="g-font-size-32--xs g-font-size-36--sm">Roadsec 2017</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque justo, imperdiet non mattis in, gravida non dolor. Mauris tristique lacus sit amet ante dapibus tincidunt. Nulla et lorem id est dapibus luctus. Praesent elementum consectetur justo ut euismod. Nulla accumsan odio in arcu feugiat posuere.</p>
+                            <p>O Roadsec é um roadshow itinerante que leva um dia inteiro de atividades e conteúdo sobre hacking, segurança da informação e tecnologia por todo o país. O evento viaja por capitais brasileiras levando palestras, cursos, oficinas e também campeonatos. No Rio de Janeiro, Duda e Evelyn tiveram o prazer de falar no painel "A presença da mulher em TI" com a Cris Motinha!</p>
                         </div>
                         <a href="https://www.linkedin.com/pulse/entre-minas-hackers-e-nerds-uma-breve-hist%C3%B3ria-maior-evento-joia?published=t" class="text-uppercase s-btn s-btn--sm s-btn--primary-brd g-radius--50 g-padding-x-40--xs">Saiba mais</a>
                     </div>
@@ -272,7 +254,7 @@
                     <div class="col-sm-5">
                         <div class="g-margin-b-30--xs">
                             <h3 class="g-font-size-32--xs g-font-size-36--sm">HackPUC</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque justo, imperdiet non mattis in, gravida non dolor. Mauris tristique lacus sit amet ante dapibus tincidunt. Nulla et lorem id est dapibus luctus. Praesent elementum consectetur justo ut euismod. Nulla accumsan odio in arcu feugiat posuere.</p>
+                            <p>O HackPUC é um festival de cultura digital. Além da maratona de programação, tem uma outra focado em design e ocorrem palestras, performances, exposições e apresentações que estimulam ainda mais a interação entre os participantes. Evelyn falou sobre a mulheres e tecnologia junto da Carine Roos, Karina Israel e Rebeca Bordini.</p>
                         </div>
                         <a href="https://www.facebook.com/HackPUCRio/" class="text-uppercase s-btn s-btn--sm s-btn--primary-brd g-radius--50 g-padding-x-40--xs">Saiba mais</a>
                     </div>
@@ -289,14 +271,15 @@
                     <div class="col-sm-5 col-sm-push-7">
                         <div class="g-margin-b-30--xs">
                             <h3 class="g-font-size-32--xs g-font-size-36--sm">Women Techmakers Rio</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque justo, imperdiet non mattis in, gravida non dolor. Mauris tristique lacus sit amet ante dapibus tincidunt. Nulla et lorem id est dapibus luctus. Praesent elementum consectetur justo ut euismod. Nulla accumsan odio in arcu feugiat posuere.</p>
+                            <p>O Google empenha-se em desenvolver um ambiente de trabalho inclusivo no mundo todo. Com esse objetivo, o Women Techmakers foi criado para incentivar e apoiar qualquer pessoa cis, trans, binária ou não-binária que se identifique com o gênero feminino, perseguirem seus sonhos e se melhorarem como profissionais em um espaço seguro e profissional.</p>
+                            <p>O Women Techmakers Rio de Janeiro é uma comunidade independente, dentro do GDG Rio de Janeiro.</p>
                         </div>
                         <a href="https://www.facebook.com/wtmRio/" class="text-uppercase s-btn s-btn--sm s-btn--primary-brd g-radius--50 g-padding-x-40--xs">Saiba mais</a>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6 col-sm-pull-6 g-promo-section__img-right--md g-promo-section__img-left--md g-bg-position--center g-height-400--xs g-height-100-percent--md js__fullwidth-img">
-                <img class="img-responsive" src="img/eventos/womentechmakersrio.jpeg" alt="Image">
+                <img class="img-responsive" src="img/eventos/womentechmakersrio.jpg" alt="Image">
             </div>
         </div>
         <!-- End Promo Section -->
@@ -307,7 +290,7 @@
                     <div class="col-sm-5">
                         <div class="g-margin-b-30--xs">
                             <h3 class="g-font-size-32--xs g-font-size-36--sm">Scratch Day Rio</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque justo, imperdiet non mattis in, gravida non dolor. Mauris tristique lacus sit amet ante dapibus tincidunt. Nulla et lorem id est dapibus luctus. Praesent elementum consectetur justo ut euismod. Nulla accumsan odio in arcu feugiat posuere.</p>
+                            <p>O evento tem o objetivo de celebrar o uso do Scratch, envolver professores e alunos com o público maker e reunir o núcleo do Rio da Rede de Aprendizagem Criativa. Ana Julia, Andressa, Evelyn, Juliana e Thais falaram sobre “Meninas no mundo da programação”, desde algumas mulheres que influenciam nesse mundo até algumas ferramentas que ajudam a aprender.</p>
                         </div>
                         <a href="https://day.scratch.mit.edu/events/3660/" class="text-uppercase s-btn s-btn--sm s-btn--primary-brd g-radius--50 g-padding-x-40--xs">Saiba mais</a>
                     </div>
@@ -358,31 +341,26 @@
         <footer class="g-bg-color--sky-light">
             <!-- Links -->
             <div class="g-hor-divider__dashed--white-opacity-lightest">
-                <div class="container g-padding-y-80--xs">
+                <div class="container g-padding-y-40--xs">
                     <div class="row">
                         <div class="col-sm-2 g-margin-b-20--xs g-margin-b-0--md">
                             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
-                                <li><a class="g-font-size-15--xs g-color--primary" href="contato.html">Contato</a></li>
+                                <li><a class="g-font-size-15--xs g-color--primary g-font-weight--500" href="https://www.facebook.com/HackGirlsRJ/">Facebook</a></li>
                             </ul>
                         </div>
                         <div class="col-sm-2 g-margin-b-20--xs g-margin-b-0--md">
                             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
-                                <li><a class="g-font-size-15--xs g-color--primary" href="https://www.facebook.com/HackGirlsRJ/">Facebook</a></li>
+                                <li><a class="g-font-size-15--xs g-color--primary g-font-weight--500" href="https://twitter.com/hackgirlsrj">Twitter</a></li>
                             </ul>
                         </div>
                         <div class="col-sm-2 g-margin-b-20--xs g-margin-b-0--md">
                             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
-                                <li><a class="g-font-size-15--xs g-color--primary" href="https://twitter.com/hackgirlsrj">Twitter</a></li>
+                                <li><a class="g-font-size-15--xs g-color--primary g-font-weight--500" href="https://www.instagram.com/hackgirlss/">Instagram</a></li>
                             </ul>
                         </div>
                         <div class="col-sm-2 g-margin-b-20--xs g-margin-b-0--md">
                             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
-                                <li><a class="g-font-size-15--xs g-color--primary" href="https://www.instagram.com/hackgirlss/">Instagram</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-2 g-margin-b-20--xs g-margin-b-0--md">
-                            <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
-                                <li><a class="g-font-size-15--xs g-color--primary" href="https://github.com/hackgirlsrj">GitHub</a></li>
+                                <li><a class="g-font-size-15--xs g-color--primary g-font-weight--500" href="https://github.com/hackgirlsrj">GitHub</a></li>
                             </ul>
                         </div>
                     </div>

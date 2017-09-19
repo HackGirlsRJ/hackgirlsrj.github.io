@@ -334,6 +334,10 @@ fieldset[disabled] .s-btn {
   border-left: none;
 }
 
+.s-italic {
+    font-style: italic;
+}
+
 /*----------------------------------
   Clients v1
 ------------------------------------*/
